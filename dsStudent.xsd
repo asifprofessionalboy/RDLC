@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsStudent" targetNamespace="http://tempuri.org/dsStudent.xsd" xmlns:mstns="http://tempuri.org/dsStudent.xsd" xmlns="http://tempuri.org/dsStudent.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="DbpracticeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DbpracticeConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.DbpracticeConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsStudent" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsStudent" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsStudent">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="studentTbl" msprop:Generator_RowClassName="studentTblRow" msprop:Generator_RowEvHandlerName="studentTblRowChangeEventHandler" msprop:Generator_RowDeletedName="studentTblRowDeleted" msprop:Generator_RowDeletingName="studentTblRowDeleting" msprop:Generator_RowEvArgName="studentTblRowChangeEvent" msprop:Generator_TablePropName="studentTbl" msprop:Generator_RowChangedName="studentTblRowChanged" msprop:Generator_UserTableName="studentTbl" msprop:Generator_RowChangingName="studentTblRowChanging" msprop:Generator_TableClassName="studentTblDataTable" msprop:Generator_TableVarName="tablestudentTbl">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_UserColumnName="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnVarNameInTable="columnname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address" msprop:Generator_UserColumnName="address" msprop:Generator_ColumnPropNameInTable="addressColumn" msprop:Generator_ColumnPropNameInRow="address" msprop:Generator_ColumnVarNameInTable="columnaddress">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gender" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="gender" msprop:Generator_ColumnPropNameInTable="genderColumn" msprop:Generator_ColumnPropNameInRow="gender" msprop:Generator_ColumnVarNameInTable="columngender" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
